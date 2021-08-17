@@ -1,0 +1,36 @@
+var num = [1,2,3,4,5]
+var posi = ["primeira","segunda","terceira","quarta","quinta"]
+
+function rts(num2){
+  return num2 - 1;}
+
+function memesis(y) {
+  if(y == 0) {
+    console.log(posi[y])
+  } else if (y == 1) {
+    console.log(posi[y])
+  } else if (y == 2) {
+    console.log(posi[y])
+  } else if (y == 3) {
+    console.log(posi[y])
+  } else if (y == 4) {
+    console.log(posi[y])
+}}
+
+function casa(x) {
+   for(var t = 0; t < num.length; t++){
+     if (x[t] == 0) {
+       memesis(t)
+}}}
+
+function imprime(element,index){
+  console.log(element,index)
+}
+
+for(var i = num[4]; i > 0; i--) {
+  num = num.map(rts)
+   console.log(num)
+     casa(num)
+}
+
+num.forEach(imprime)
