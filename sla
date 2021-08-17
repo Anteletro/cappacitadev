@@ -1,0 +1,75 @@
+var listaDadosClientes = [
+  {
+    nome: 'Daiane',
+    idade: 24,
+    endereco: 'Rua Freire, 24, Consolação, São Paulo'
+  },
+  {
+    nome: 'Gabriel',
+    idade: 19,
+    endereco: 'Rua Armando sá, 47, Perdizes, São Paulo'
+  },
+  {
+    nome: 'Bruno',
+    idade: 37,
+    endereco: 'Av. Santos Dumont, 978, Belo Horizonte, Minas Gerais'
+  }
+]
+
+
+var obj = listaDadosClientes[0]
+var qtd = 0;
+var key;
+
+
+for(key in obj) {
+    if(obj.hasOwnProperty(key)) {
+        qtd++;
+    }    
+}    
+
+
+var t1 = listaDadosClientes.length -1
+var t2 = qtd -1
+var rt = t2
+
+var t3 = 0
+ // t2 = 3 nome
+// t2 = 2  idade
+// t2 = 1 endereço
+
+
+while (t1 >= 0 && t2 >= 0 ){
+  
+  
+  if (t2 <= 0 && t1 != 0){
+     t3++
+    console.log(listaDadosClientes[t3].nome)
+    t2 = rt
+    t1--
+   
+   
+    
+  } 
+  
+  
+  else if (t2 == 0 && t1 == 0) {
+    break
+  }
+  
+ 
+  
+  else {
+    if (t1 == rt && t2 == rt){
+    console.log(listaDadosClientes[t3].nome)
+  } 
+    if (t2 == 2){
+      console.log(listaDadosClientes[t3].idade) 
+    } else if (t2 == 1) {
+      console.log(listaDadosClientes[t3].endereco)
+    }
+    t2--
+         }
+}
+
+
